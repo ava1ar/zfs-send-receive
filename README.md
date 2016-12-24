@@ -25,4 +25,5 @@ Created by ava1ar (mail@ava1ar.me)
 * Resumable zfs send/receive (-s / -t flags)
 * Differential replication (-I flag)
 * Large blocks / embedded data support (-l / -e flags)
-  
+
+You may use, distribute and copy zfs-send-receive code under the terms of GNU General Public License version 2: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html  
