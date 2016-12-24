@@ -1,8 +1,6 @@
 # zfs-send-receive
 ZFS replication (send/receive) helper script
 
-Created by ava1ar (mail@ava1ar.me)
-
 ###Supported features:
 * zfs send/receive on remote box in push mode (script should run on source box)
 * supports ssh and nc as transports
