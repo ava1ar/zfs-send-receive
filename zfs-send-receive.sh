@@ -1,6 +1,7 @@
 #!/bin/bash
 #
-#	ZFS replication (send/receive) helper script version 0.1
+#	ZFS replication (send/receive) helper script 
+#	Version 0.1
 #
 #	Created by ava1ar (mail@ava1ar.me)
 #
@@ -9,9 +10,9 @@
 #		* supports ssh and nc as transports
 #	
 #	Usage example:
-#		# Sending data/files dataset to data/files on remote machine with ip 192.168.1.253 using nc with verbose enabled:
+#		* Sending data/files dataset to data/files on remote machine with ip 192.168.1.253 using nc with verbose enabled:
 #		./zfs-send-receive.sh -s data/files -d data/files -r 192.168.1.253 -t nc -v	
-#		# Sending data/downloads dataset to data/downloads on remote machine with ip 192.168.1.253 using ssh with super verbose enable:
+#		* Sending data/downloads dataset to data/downloads on remote machine with ip 192.168.1.253 using ssh with super verbose enable:
 #		./zfs-send-receive.sh -s data/downloads -d data/downloads -r 192.168.1.253 -t ssh -vv	
 #
 #	Version history:
@@ -24,6 +25,9 @@
 #		* Differential replication (-I flag)
 #		* Large blocks / embedded data support (-l / -e flags)
 #		* zfs bookmarks as a source of replication
+#
+#	 You may use, distribute and copy zfs-send-receive code under the terms of GNU General Public License version 2: https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+#
 
 ### HARDCODED PARAMETERS ###
 
